@@ -2,7 +2,7 @@ import logging
 import requests
 from bs4 import BeautifulSoup
 from aiogram import Bot, Dispatcher, types, F
-from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from aiogram.types import InlineKeyboardButton
 from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.fsm.context import FSMContext
 from aiogram.filters import Command
@@ -239,7 +239,7 @@ async def change_month(callback_query: types.CallbackQuery):
     await callback_query.answer()
 
 
-async def start(message: types.Message, state: FSMContext):
+async def start(message: types.Message):
     logging.info("Starting bot")
 
     user_id = message.from_user.id
@@ -416,4 +416,3 @@ if __name__ == '__main__':
     import asyncio
 
     asyncio.run(main())
-
