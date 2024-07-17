@@ -12,9 +12,8 @@ import calendar
 import sqlite3
 
 # Токен вашого бота
-TOKEN = '7086626446:AAGuT9DR8XNI_0AfQ-g9DIuO84BeexMQn5o'
-# ID власника бота
-OWNER_ID = 432530900  # Замініть це значення на ваш Telegram User ID
+TOKEN = 'your_telegram_token_bot'
+OWNER_ID = your_telegram_user_ID  # Замініть це значення на ваш Telegram User ID
 
 # Налаштування логування
 logging.basicConfig(level=logging.INFO)
